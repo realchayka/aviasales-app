@@ -1,0 +1,47 @@
+.middleElem {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.middleContainer {
+    color: #A0B0B9;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+
+.time {
+    color: #4A4A4A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px; /* 150% */   
+    }
+
+    .content {
+        margin-top: 20px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .contentPrice {
+        color:#2196F3;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 100% */
+    }
+    
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
