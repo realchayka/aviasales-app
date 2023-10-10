@@ -2,11 +2,13 @@
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
-    padding: 20px;
-    height: 230px;
+    // padding: 20px;
+    height: 240px;
 }
 
 .text {
+    padding: 20px;
+    padding-bottom: 0;
     color: #4A4A4A;
     font-size: 12px;
     font-style: normal;
@@ -14,16 +16,27 @@
     line-height: 12px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 .checkboxContainer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
+    
+}
+
+
+
+.checkboxContainer:hover {
+    background: #F1FCFF;
 }
 
 .label {
+    width: 100%;
     color: #4A4A4A;
     font-size: 13px;
     font-style: normal;
@@ -50,7 +63,7 @@
             background-repeat: no-repeat;
             position: absolute;
             left: 0;
-            top: 2px;
+            top: 0;
         }
     }
 
@@ -66,3 +79,4 @@
         border: none;
     }
 }
+
