@@ -3,7 +3,7 @@
     background: #FFF;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
     padding: 20px;
-    max-height: 252px;
+    height: 230px;
 }
 
 .text {
@@ -28,5 +28,41 @@
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 153.846% */
+    line-height: 20px;
+    /* 153.846% */
+}
+
+
+.checkbox {
+    display: none;
+
+    &+.label {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+    }
+
+    /* Стили для неактивного чекбокса */
+    &:not(:checked)+.label::before {
+        box-sizing: border-box;
+        border: 1px solid #2196F3;
+        border-radius: 2px;
+    }
+
+    &:checked+.label::before {
+        background-image: url('../../assets/Checkbox.svg');
+        border: none;
+    }
 }

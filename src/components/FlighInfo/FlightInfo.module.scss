@@ -25,10 +25,12 @@
     }
 
     .content {
+        box-sizing: border-box;
         margin-top: 20px;
         background: #fff;
         padding: 20px;
         border-radius: 5px;
+        // width: 390px;
     }
     
     .contentPrice {

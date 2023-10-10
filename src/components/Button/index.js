@@ -2,8 +2,12 @@ import React from 'react'
 
 import styles from './Button.module.scss'
 
-const Button = () => {
-  return <button className={styles.button}>Показать еще 5 билетов!</button>
+const Button = (props) => {
+  return (
+    <button className={styles.button} {...props}>
+      Показать еще 5 билетов!
+    </button>
+  )
 }
 
 export default Button
